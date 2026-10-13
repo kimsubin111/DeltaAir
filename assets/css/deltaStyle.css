@@ -8,7 +8,7 @@
     top: 0;
     z-index: 1000;
 
-    transition: background-color 0.5s;
+    transition: all 0.5s;
 }
 #banner_bg {
     padding-top: 63px;
@@ -410,4 +410,19 @@ ul.footer_sns i {
 }
 ul.footer_sns span {
     padding: 0 3px;
+}
+
+.top {
+    position: fixed;
+    right: 3%;
+    bottom: 3%;
+    color: #ba0707;
+    font-size: 40px;
+    z-index: 1000;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.top.opacity {
+    opacity: 1;
 }

@@ -1,13 +1,23 @@
 /* layout */
 #header {
+    width: 100%;
     background-color: #001932;
+    position: fixed;
+    left: center;
+    top: 0;
+    z-index: 2;
 }
 #banner_bg {
+    padding-top: 63px;
 }
 #main {
     margin-top: 50px;
 }
 #footer {
+    background-color: #001932;
+    color: #fff;
+    padding: 50px 0;
+    margin-top: 50px;
 }
 .container {
     width: 1200px;
@@ -135,8 +145,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
     margin-top: 10px;
+
+    cursor: pointer;
+    transition: all 0.3s;
+}
+#banner .banner_txt .more:hover {
+    background-color: #750202;
 }
 
 /* banner_menu */
@@ -260,4 +275,83 @@ ul.fee li a span {
     height: 5px;
     background-color: #ba0707;
     margin: 5px 0;
+}
+
+/* footer */
+#footer h1 {
+    font-size: 40px;
+    font-weight: 400;
+    text-align: center;
+}
+.popular_menu {
+    font-size: 18px;
+    text-align: center;
+    margin-top: 20px;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 20px;
+}
+.popular_menu span {
+    padding: 0 20px;
+    font-weight: 400;
+}
+.popular_menu span:first-child {
+    color: #999;
+    font-weight: 800;
+}
+
+.footer_menu {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+.firstMenu {
+    color: #999;
+}
+.footer_menu li {
+    margin-bottom: 15px;
+}
+.firstMenu .fa-angle-down {
+    display: none;
+}
+
+.delta_desc {
+    font-size: 13px;
+    text-align: center;
+    color: #999;
+    margin-top: 80px;
+}
+.delta_desc li {
+    margin-bottom: 10px;
+    line-height: 23px;
+    word-break: keep-all;
+}
+.delta_desc li span {
+    color: #fff;
+}
+
+ul.footer_sns {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+ul.footer_sns li {
+    flex: 1;
+    text-align: center;
+    border-right: 1px solid #fff;
+    box-sizing: border-box;
+}
+ul.footer_sns li:last-child {
+    border: 0;
+}
+ul.footer_sns i {
+    font-size: 20px;
+    position: relative;
+    top: 2px;
+    padding: 0 3px;
+}
+ul.footer_sns span {
+    padding: 0 3px;
 }

@@ -19,6 +19,9 @@
 }
 
 @media (max-width: 960px) {
+    .container {
+        padding: 0 30px;
+    }
     .header_inner {
         justify-content: center;
     }
@@ -75,6 +78,12 @@
 }
 
 @media (max-width: 768px) {
+    .container {
+        padding: 0 40px;
+    }
+    .menu_inner {
+        padding: 0;
+    }
     #banner .banner_txt {
         text-align: center;
         left: 0;
@@ -114,6 +123,52 @@
     }
     .box_bg2 .box_txt2 {
         width: 100%;
+    }
+
+    #footer h1 {
+        font-size: 25px;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 30px;
+    }
+    .popular_menu {
+        display: none;
+    }
+    .footer_menu {
+        flex-direction: column;
+    }
+    .footer_dropdown {
+        display: none;
+    }
+    .firstMenu {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid #fff;
+        padding-bottom: 15px;
+    }
+    .firstMenu .fa-angle-down {
+        display: block;
+    }
+
+    .delta_desc {
+        margin-top: 20px;
+    }
+
+    ul.footer_sns {
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    ul.footer_sns li {
+        flex: none;
+    }
+    ul.footer_sns li:nth-child(1) {
+        width: 100%;
+        border: 0;
+        margin-bottom: 15px;
+    }
+    ul.footer_sns li:nth-child(2),
+    ul.footer_sns li:nth-child(3) {
+        width: 50%;
     }
 }
 
